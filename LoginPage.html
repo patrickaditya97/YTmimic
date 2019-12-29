@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        nav .brand-logo {
+            padding-left: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            color: white;
+        }
+
+        textarea:focus,
+        input:focus {
+            color: white;
+        }
+
+        nav {
+            position: fixed;
+            z-index: 1;
+        }
+
+        #video_body {
+            /* display: none; */
+            margin-top: 100px;
+        }
+    </style>
+
+
+    <title>Welcome</title>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="nav-wrapper #212121 grey darken-4 z-depth-4">
+            <a href="#" class="brand-logo"><img src="YouTube1.png" alt="Logo" style="width: 45px;"></a>
+
+            <ul id="nav-mobile" class=" center hide-on-med-and-down">
+
+                <li class="nav_items" style="margin-left:80px;"><a href="#playlist.html">Playlist</a></li>
+
+                <li class="nav_items">
+                    <div class="input-field col s12 ">
+                        <input type="text" id="autocomplete-input" class="grey darken-1"
+                                style="padding-left: 5px; margin-left: 245px;">
+                    </div>
+                </li>
+
+                <li class="nav_items">
+                    <button class="btn waves-effect waves-light grey darken-3" type="submit" name="action"
+                        style="height: 3rem;margin-bottom: 6px; margin-left: 270px;">Search</button>
+                </li>
+
+                <li class="nav_items">
+                    <button class="btn waves-effect waves-light red darken-3" type="submit" name="action"
+                        style="height: 3rem;margin-bottom: 6px; margin-left: 320px;">Logout</button>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="section"></div>
+            <main>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div id="login_body" class="grey darken-4 row"
+                        style=" padding: 32px 48px 0px 48px; border: 1px; margin-top: 100px; width: 400px; /*display: none;*/ ">
+                        
+                        <div class="section" style="text-align: center;">
+                            <img src="YouTube3.png" alt="Logo" style="width: 200px;">
+                        </div>
+
+                        <!-- <form action=""> -->
+
+                        <div class='row' style="margin-bottom: 0;">
+                            <div class='input-field col s12'>
+                                <input class='validate' type="text" name='username' id='email' required />
+                                <label for='email'>Username</label>
+                            </div>
+                        </div>
+
+                        <div class='row'>
+                            <div class='input-field col m12'>
+                                <input class='validate' type='password' name='password' id='password' required />
+                                <label for='password'>Password</label>
+                            </div>
+                            <!-- <label style='float: right;'>
+                                    <a><b style="color: #F5F5F5;">Forgot Password?</b></a>
+                                </label> -->
+                        </div>
+
+                        <br />
+
+                        <div class='row' style="text-align: center;">
+                            <button style="color: white; font-weight: 700; width: 60%; height: 40px;" type='submit'
+                                name='btn_login' class='btn-small waves-effect red accent-4 btn_login'>Login</button>
+                        </div>
+
+
+                        <!-- </form> -->
+
+                        <div style="text-align: center; margin-bottom: 25px;">
+                            <a class="oauth-container btn darken-4 white black-text" href="/users/google-oauth/"
+                                style="text-transform:none">
+                                <div class="left">
+                                    <img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                                </div>
+                                Login with Google
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="video_body" class="grey darken-4">
+                    <div class="row" style="margin-bottom: 20px;">
+                        
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>
